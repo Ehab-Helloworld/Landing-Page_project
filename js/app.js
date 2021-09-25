@@ -104,7 +104,7 @@ document.addEventListener('scroll', function () {
 
     for (let i = 0; i < section.length; i++) {
         if (viewPort(section[i])) {
-            document.getElementById('li-Id' + (i + 1)).style.cssText = 'background: #444;color"#fff '
+            document.getElementById('li-Id' + (i + 1)).style.cssText = 'background: #444;color:#fff '
 
         }
         else {
