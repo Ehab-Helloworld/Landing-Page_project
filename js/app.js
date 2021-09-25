@@ -36,7 +36,7 @@ function viewPort(section) {
     const bounding = section.getBoundingClientRect();
 
     if (bounding.top >= 0 && bounding.left >= 0 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
-        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)) {
+        bounding.top <= 150) {
 
         return true;
     }
@@ -104,11 +104,11 @@ document.addEventListener('scroll', function () {
 
     for (let i = 0; i < section.length; i++) {
         if (viewPort(section[i])) {
-            document.getElementById('li-Id' + (i + 1)).style.cssText = 'background: #444; '
+            document.getElementById('li-Id' + (i + 1)).style.cssText = 'background: #444;color"#fff '
 
         }
         else {
-            document.getElementById('li-Id' + (i + 1)).style.cssText = 'background: null;'
+            document.getElementById('li-Id' + (i + 1)).style.cssText = 'background: null;color:#000'
 
 
         }
